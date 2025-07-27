@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{12745C06-D637-42E8-9782-8749FAB7F03F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.Data", "src\Ai-ChatApp.Data\Ai-ChatApp.Data.csproj", "{124F50A8-6D3B-4156-A47E-B4C9A910DC65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.Domain", "src\Ai-ChatApp.Domain\Ai-ChatApp.Domain.csproj", "{B99740B5-27D4-4234-9614-D27376CB3C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.Service", "src\Ai-ChatApp.Service\Ai-ChatApp.Service.csproj", "{B24CBC91-1610-4FB9-B365-F90FF39DE70E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.Shared", "src\Ai-ChatApp.Shared\Ai-ChatApp.Shared.csproj", "{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.WebApi", "src\Ai-ChatApp.WebApi\Ai-ChatApp.WebApi.csproj", "{14D96A31-6395-4255-B394-9DAF700BFC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ai-ChatApp.Web", "src\Ai-ChatApp.Web\Ai-ChatApp.Web.csproj", "{5CAB9B01-47A8-418F-9C81-C66D3A120225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{124F50A8-6D3B-4156-A47E-B4C9A910DC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124F50A8-6D3B-4156-A47E-B4C9A910DC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124F50A8-6D3B-4156-A47E-B4C9A910DC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124F50A8-6D3B-4156-A47E-B4C9A910DC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99740B5-27D4-4234-9614-D27376CB3C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99740B5-27D4-4234-9614-D27376CB3C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99740B5-27D4-4234-9614-D27376CB3C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99740B5-27D4-4234-9614-D27376CB3C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24CBC91-1610-4FB9-B365-F90FF39DE70E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24CBC91-1610-4FB9-B365-F90FF39DE70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24CBC91-1610-4FB9-B365-F90FF39DE70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24CBC91-1610-4FB9-B365-F90FF39DE70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D96A31-6395-4255-B394-9DAF700BFC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D96A31-6395-4255-B394-9DAF700BFC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D96A31-6395-4255-B394-9DAF700BFC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D96A31-6395-4255-B394-9DAF700BFC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAB9B01-47A8-418F-9C81-C66D3A120225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAB9B01-47A8-418F-9C81-C66D3A120225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAB9B01-47A8-418F-9C81-C66D3A120225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAB9B01-47A8-418F-9C81-C66D3A120225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{124F50A8-6D3B-4156-A47E-B4C9A910DC65} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+		{B99740B5-27D4-4234-9614-D27376CB3C0B} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+		{B24CBC91-1610-4FB9-B365-F90FF39DE70E} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+		{5A28266B-C3B2-4FD2-B8F5-F6246B0F5A5D} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+		{14D96A31-6395-4255-B394-9DAF700BFC11} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+		{5CAB9B01-47A8-418F-9C81-C66D3A120225} = {12745C06-D637-42E8-9782-8749FAB7F03F}
+	EndGlobalSection
+EndGlobal
