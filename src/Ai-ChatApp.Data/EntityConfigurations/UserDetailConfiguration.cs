@@ -1,4 +1,5 @@
-﻿using Ai_ChatApp.Domain.Entities.Users;
+﻿using System.Reflection.Emit;
+using Ai_ChatApp.Domain.Entities.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -13,7 +14,9 @@ public class UserDetailConfiguration : IEntityTypeConfiguration<UserDetail>
         builder.HasKey(detail => detail.Id);
 
         builder.Property(detail => detail.Address)
-            .HasMaxLength(500);
+        .HasMaxLength(500);
+
+        builder.HasQueryFilter(detail => !detail.IsDeleted);
 
         builder.HasOne(detail => detail.Picture)
             .WithMany()
