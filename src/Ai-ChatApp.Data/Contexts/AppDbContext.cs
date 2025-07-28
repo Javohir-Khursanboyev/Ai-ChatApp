@@ -1,4 +1,5 @@
-﻿using Ai_ChatApp.Domain.Entities.Chats;
+﻿using System.Reflection;
+using Ai_ChatApp.Domain.Entities.Chats;
 using Ai_ChatApp.Domain.Entities.Identity;
 using Ai_ChatApp.Domain.Entities.Resources;
 using Ai_ChatApp.Domain.Entities.Users;
@@ -6,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ai_ChatApp.Data.Contexts;
 
-public class AppDbContext : DbContext
+public sealed class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -23,5 +24,7 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 }
