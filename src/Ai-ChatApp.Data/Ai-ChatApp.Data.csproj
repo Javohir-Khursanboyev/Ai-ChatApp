@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>Ai_ChatApp.Data</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +13,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ai-ChatApp.Domain\Ai-ChatApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UnitOfWorks\" />
   </ItemGroup>
 
 </Project>
