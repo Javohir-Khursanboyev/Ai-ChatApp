@@ -7,4 +7,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ai-ChatApp.Domain\Ai-ChatApp.Domain.csproj" />
+    <ProjectReference Include="..\Ai-ChatApp.Shared\Ai-ChatApp.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

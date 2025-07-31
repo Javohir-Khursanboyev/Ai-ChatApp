@@ -1,6 +1,6 @@
 ﻿namespace Ai_ChatApp.Shared.DTOs.Users;
 
-public sealed class UserCreateUpdateModel
+public sealed class UserDetailCreateModel
 {
     public string Address { get; set; }
     public DateTime DateOfBirth { get; set; }
