@@ -23,6 +23,7 @@ public sealed class AssetService(IMapper mapper, IUnitOfWork unitOfWork, AssetCr
             FileType = model.FileType
         };
 
+        asset.Create();
         var createdAsset = await unitOfWork.Assets.InsertAsync(asset);
         await unitOfWork.SaveAsync();
 
@@ -45,5 +46,4 @@ public sealed class AssetService(IMapper mapper, IUnitOfWork unitOfWork, AssetCr
 
         return mapper.Map<AssetViewModel>(existAsset);
     }
-
 }
