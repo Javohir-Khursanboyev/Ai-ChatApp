@@ -25,7 +25,7 @@ public sealed class UserService(
     UserCreateModelValidator createModelValidotor,
     UserUpdateModelValidator updateModelValidator) : IUserService
 {
-    public async Task<LoginViewModel> CreateAsync(UserCreateModel createModel)
+    public async Task<LoginResultModel> CreateAsync(UserCreateModel createModel)
     {
         await unitOfWork.BeginTransactionAsync();
         await createModelValidotor.EnsureValidatedAsync(createModel);
@@ -56,7 +56,7 @@ public sealed class UserService(
         await userDetailService.CreateAsync(userDeatil);
         await unitOfWork.CommitTransactionAsync();
 
-        return new LoginViewModel
+        return new LoginResultModel
         {
             User = mapper.Map<UserViewModel>(createdUser),
             Token = AuthHelper.GenerateToken(createdUser)
