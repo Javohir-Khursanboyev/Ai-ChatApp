@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace Ai_ChatApp.Service.Validators.Auth;
 
-public class LoginCreateModelValidator : AbstractValidator<LoginCreateModel>
+public class LoginModelValidator : AbstractValidator<LoginModel>
 {
-    public LoginCreateModelValidator()
+    public LoginModelValidator()
     {
         RuleFor(x => x.Email)
             .NotEmpty().WithMessage("Email must not be empty.")

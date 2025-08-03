@@ -6,7 +6,7 @@ namespace Ai_ChatApp.Service.Services.Users;
 
 public interface IUserService
 {
-    Task<LoginViewModel> CreateAsync(UserCreateModel createModel);
+    Task<LoginResultModel> CreateAsync(UserCreateModel createModel);
     Task<UserViewModel> UpdateAsync(long id, UserUpdateModel updateModel);
     Task<bool> DeleteAsync(long id);
     Task<UserViewModel> GetByIdAsync(long id);
